@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+button {
+  border-radius: calc(infinity*1rem);
+  transition: all 0.5s ease;
+}
+#timetable-grid {
+  display: grid;
+  height: 100%;
+  text-align: center;
+  grid-template-columns: repeat(21, 1fr);
+}
+#timetable-grid > :not(button):nth-child(21n+2) {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+#timetable-grid > :not(button):nth-child(21n) {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+#subject-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1000;
+}
+#subject-popup button {
+  font-size: 1.25rem;
+}
+#CM,.CM {background-color: #fece3c;}
+#EL,.EL {background-color: #c5d4ff;}
+#MA,.MA {background-color: #7beb99;}
+#PC,.PC {background-color: #f6c3fe;}
+#CAM,.CAM {background-color: #ffc6c5;}
+#CCA,.CCA {background-color: #d4d4d4;}
+#BL,.BL {background-color: #29b85c;}
+#PE,.PE {background-color: #ccb27f;}
+#CS,.CS {background-color: #e5e79a;}
+#HU,.HU {background-color: #76e4ff;}
+#MT,.MT {background-color: #ff7475;}
+#AR_MU,.AR_MU {background-color: #c189f8;}
+#DV,.DV {background-color: #f4b184;}
+.Elective,.Break {background-color: white;}
+button:enabled:hover {
+  background-color: black !important;
+  color: white;
+}
+.addbutton {
+  font-size: 1rem; z-index: 9;
+}
