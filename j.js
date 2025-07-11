@@ -10,7 +10,7 @@ var friday = 30;
 var buttonpressed;
 
 // in half hrs
-var timeleft = {"BREAK": 17};
+var timeleft = {"Break": 17};
 ["PC", "CM", "BL", "CS", "DV", "HU", "PE", "AR_MU", "ELECTIVE"].forEach(key => timeleft[key] = 4);
 ["EL", "CCA", "CAM"].forEach(key => timeleft[key] = 8);
 ["MT", "MA"].forEach(key => timeleft[key] = 6);
