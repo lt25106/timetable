@@ -13,14 +13,6 @@ button {
   text-align: center;
   grid-template-columns: repeat(21, 1fr);
 }
-#timetable-grid > :not(button):nth-child(21n+2) {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-#timetable-grid > :not(button):nth-child(21n) {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
 #subject-popup {
   position: absolute;
   top: 50%;

@@ -27,7 +27,6 @@ function addsubject(name) {
   newDiv.style.color = "black";
   subjectpopup.style.display = "none";
   timeleft[name]--;
-
   if (buttonpressed == 1) {
     timetable.insertBefore(newDiv, timetable.children[monday]);
     monday++;
